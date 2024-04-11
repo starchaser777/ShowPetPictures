@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
+    <Switch
         android:id="@+id/checkStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,19 +65,24 @@
                 android:textSize="@dimen/textSizeSmall"/>
         </RadioGroup>
 
-        <Button
-            android:id="@+id/btnDone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btnDone"
-            android:textSize="@dimen/textSizeMedium"/>
-
         <ImageView
             android:id="@+id/imgV"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:src="@drawable/dog"
             android:scaleType="fitXY"/>
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnFinish"/>
+
+        <Button
+            android:id="@+id/btnInit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnInit"/>
     </LinearLayout>
 
 </LinearLayout>
